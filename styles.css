@@ -1,17 +1,11 @@
 body {
 	font-family: 'Roboto Slab', serif;
-	background-color: #565556;
+	background-color: #050404;
 }
 a {
 	text-decoration: none;
 	color:black;
 	display:block;
-}
-a:visited {
-	color:black;
-}
-a:hover {
-	color:black;
 }
 h1 {
 	text-align: center;
@@ -21,11 +15,23 @@ input {
 	background-color: white;
 	border:none;
 	outline:none;
-	border-radius:5px;
 	width:20%;
-	padding:7px;
-	margin:4px;
+	padding:8px;
 	font-family:'Roboto Slab',serif;
+}
+ul {
+	list-style: none;
+	text-align:center;
+	padding:0px;
+	margin:0px;
+}
+li {
+	text-align: left;
+}
+h4 {
+	text-align: left;
+	font-weight: normal;
+	font-size:90%;
 }
 #pages {
 	width:80%;
@@ -45,9 +51,31 @@ input {
 .entry:hover {
 	border-left: 5px solid #aa2c2c;
 	border-right:5px solid #aa2c2c;
+	width:calc(90% + 65px);
+	padding-left:10px;
 }
-.fa-search {
+.fa-times {
 	background-color:white;
-	padding:8px;
-	border-radius: 5px;
+	padding:9px;
+	position:relative;
+	top:1px;
+}
+#random a{
+	color:white;
+	text-align: center;
+	margin:5px;
+}
+#autocomplete {
+	text-align:center;
+	width:calc(20% + 16px + 28px);
+	margin:0 auto;
+	background-color: white;
+	border-top:1px solid black;
+	padding-left:4px;
+}
+#pages a:visited {
+	color:black;
+}
+#pages a:hover {
+	color:black;
 }
