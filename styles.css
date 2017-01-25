@@ -1,0 +1,53 @@
+body {
+	font-family: 'Roboto Slab', serif;
+	background-color: #565556;
+}
+a {
+	text-decoration: none;
+	color:black;
+	display:block;
+}
+a:visited {
+	color:black;
+}
+a:hover {
+	color:black;
+}
+h1 {
+	text-align: center;
+	color:white;
+}
+input {
+	background-color: white;
+	border:none;
+	outline:none;
+	border-radius:5px;
+	width:20%;
+	padding:7px;
+	margin:4px;
+	font-family:'Roboto Slab',serif;
+}
+#pages {
+	width:80%;
+	margin:0 auto;
+	padding:10px;
+}
+#header {
+	text-align: center;
+}
+.entry {
+	background-color: white;
+	padding-left:15px;
+	padding-top:3px;
+	padding-bottom:5px;
+	margin:20px;
+}
+.entry:hover {
+	border-left: 5px solid #aa2c2c;
+	border-right:5px solid #aa2c2c;
+}
+.fa-search {
+	background-color:white;
+	padding:8px;
+	border-radius: 5px;
+}
