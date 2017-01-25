@@ -1,7 +1,8 @@
 (function() {
 	"use strict";
 	var titles = [];
-	var links = [];
+	var links;
+	var sentences;
 	var callback = function(data) {
 		for (var i = 0;i < data.query.search.length;i++) {
 			titles[i] = data.query.search[i].title;
@@ -11,12 +12,13 @@
 				format:"json",
 				data:"action=query&format=json&prop=extracts&list=&titles="+ titles[i] +"&exsentences=1&exlimit=10&exintro=1&explaintext=1",
 				success:function(data) {
-					console.log(data);
 					for (var k in data.query.pages) {
-						links[i] = "https://en.wikipedia.org/?curid=" + k;
+						links= "https://en.wikipedia.org/?curid=" + k;
+						sentences = data.query.pages[k].extract;
+						console.log(sentences);
 						break;
 					}
-					console.log(links[i]);
+					$("")
 				}
 			})
 		}
